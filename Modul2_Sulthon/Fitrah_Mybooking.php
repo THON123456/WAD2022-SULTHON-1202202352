@@ -24,10 +24,10 @@
      </nav>
 
      <?php
-     $date = $_POST['date'];
-     $start_time = $_POST['start_time'];
-     $duration = $_POST['duration'];
-     $mobil = $_POST['mobil'];
+     $date = $_COOKIE['date'];
+     $start_time = $_COOKIE['start_time'];
+     $duration = $_COOKIE['duration'];
+     $mobil = $_COOKIE['mobil'];
      $phone = $_POST['phone'];
      $service = $_POST['service'];
      $total_price = 0;

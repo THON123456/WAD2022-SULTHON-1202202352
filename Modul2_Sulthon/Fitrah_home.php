@@ -36,7 +36,7 @@ echo "Find your best deal here!";
 ?></center>
 
 <br><br>
-<div class="container">
+<div class="">
         <div class="row justify-content-center">
             <div class="col">
                 <div class="card" style="width: 18rem;">
