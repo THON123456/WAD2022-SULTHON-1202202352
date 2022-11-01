@@ -24,10 +24,10 @@
      </nav>
 
      <?php
-     $date = $_COOKIE['date'];
-     $start_time = $_COOKIE['start_time'];
-     $duration = $_COOKIE['duration'];
-     $mobil = $_COOKIE['mobil'];
+     $date = $_POST['date'];
+     $start_time = $_POST['start_time'];
+     $duration = $_POST['duration'];
+     $mobil = $_POST['mobil'];
      $phone = $_POST['phone'];
      $service = $_POST['service'];
      $total_price = 0;
@@ -45,7 +45,7 @@
      <div style="padding-top: 80px;">
           <h3 style="font-weight: bold; text-align: center; margin: 40px 0 20px 0;">Thank You FITRAH_1202202352</h3>
           <p style="text-align: center;">Please double check your reservation</p>
-     </div>
+</div>
 
      <div class="mobil">
           <table class="table">

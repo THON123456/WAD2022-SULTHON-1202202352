@@ -15,7 +15,7 @@
      <nav class="navbar navbar-expand-lg fixed-top justify-content-center" style="background-color: #f0f8ff !important;">
           <ul class="nav justify-content-center">
                <li class="nav-item">
-                    <a class="nav-bar" href="Fitrah_home.php">Home</a>
+                    <a class="nav-link active" href="Fitrah_home.php" href="#">Home</a>
                </li>
                <li class="nav-item">
                     <a class="nav-link" style="border: solid black 1px; border-radius: 4px;" href="Fitrah_booking.php">Booking</a>
