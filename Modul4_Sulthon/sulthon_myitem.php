@@ -20,14 +20,14 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="RIZKI_HOME.php" style=" padding-left: 70px;">Home</a>
+                <a class="nav-link" aria-current="page" href="sulthon_home.php" style=" padding-left: 70px;">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="ListCar.php" style="color: white; padding-left:30px;">MyCar</a>
               </li>
             </ul>
           </div>
-        <a href="ADD_ITEM.php" class="btn me-md-2" style="width: 110px; background-color: white; color:blue; font-weight: 600;">Add Car</a>
+        <a href="sulthon_myitem.php" class="btn me-md-2" style="width: 110px; background-color: white; color:blue; font-weight: 600;">Add Car</a>
             
 
         </div>
@@ -40,17 +40,16 @@
         </div> -->
 
         <h3><b>My Show Room</b></h3>
-        <p>List Show Room MUHAMMAD RIZKI_1202204171</p>
+        <p>List Show Room MUHAMMAD FITRAH SULTHON_1202204171</p>
 
         <div  class="row justify-content-left">
 
             <?php
-                include 'connector.php';
-                $query = "SELECT * FROM showroom_rizki_table ORDER BY id_mobil";
-                $ida = $connect->prepare($query);
-                $ida->execute();
-                $res1 = $ida->get_result();
-
+                include 'sulthon_connector.php';
+                $query = "SELECT * FROM showroom_sulthon_table ORDER BY id_mobil";
+                $toni = $connect->prepare($query);
+                $toni->execute();
+                $res1 = $toni->get_result();
                 while ($row = $res1->fetch_assoc()) {
                 $id_mobil = $row["id_mobil"];
                 $foto = $row["foto_mobil"];
@@ -67,7 +66,7 @@
                     <div class="card-body">
                         <h5><?= $nama_mobil; var_dump($id_mobil);?></h5>
                         <p class="card-text" ><?= $deskripsi; ?></p>
-                        <a href="Detail-Ida.php" class="btn btn-primary" style="border-radius: 50px; width: 140px;">Detail</a>
+                        <a href=".php" class="btn btn-primary" style="border-radius: 50px; width: 140px;">Detail</a>
                         <a href="../config/delete.php" class="btn btn-danger" style="border-radius: 50px; width: 140px; margin-left: 20px;">Delete</a>
                     </div>
                 </div>
